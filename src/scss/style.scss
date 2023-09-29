@@ -66,17 +66,16 @@ html {
 						background-color: #000;
 						position: absolute;
 						left: 50%;
-						top: 1rem;
+						top: 0.5rem;
 						z-index: 1;
 						transition: inherit;
-						transform: translate(-50%, -50%);
 					}
 
 					&.desktop {
 						width: calc($height / (9 / 16));
 
 						&:before {
-							top: -1rem;
+							top: -1.5rem;
 						}
 					}
 
@@ -191,7 +190,14 @@ html {
 				border-radius: 99rem;
 				padding: 0.25rem 1rem;
 				transform: translateY(50%);
+				text-wrap: nowrap;
 				text-transform: uppercase;
+
+				&.show {
+					background-color: #000000;
+					color: #ffffff;
+					display: block;
+				}
 			}
 		}
 	}

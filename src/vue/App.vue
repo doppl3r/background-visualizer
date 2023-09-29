@@ -76,6 +76,7 @@
 							<input type="file" ref="image" accept="image/png, image/jpeg" @change="updateImage" hidden>
 							<button @click="$refs.image.click()">
 								<span class="material-symbols-outlined">image</span>
+								<label class="show">Click me!</label>
 							</button>
 						</div>
 						<div class="content">
